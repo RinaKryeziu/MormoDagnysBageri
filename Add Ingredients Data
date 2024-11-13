@@ -1,0 +1,17 @@
+INSERT INTO Ingredients
+(ItemNumber, SupplierId, Name, Price)
+VALUES
+    ('A1001', 2, 'Jäst', 70.00),
+    ('A2002', 1, 'Vetemjöl', 10.48),
+    ('A3003', 3, 'Mjölk', 13.25),
+    ('A4004', 2, 'Strösocker', 17.48),
+    ('A5005', 3, 'Smör', 129.90),
+    ('A6006', 2, 'Vaniljsocker', 146.88),
+    ('A7007', 1, 'Havregryn', 15.97),
+    ('A8008', 2, 'Kakao', 197.75),
+    ('A9009', 2, 'Ljus sirap', 30.00),
+    ('B1001', 2, 'Kanel', 336.36),
+    ('B2002', 2, 'Bakpulver', 121.88),
+    ('B3003', 2, 'Salt', 28.25),
+    ('B4004', 2, 'Kokos', 84.75),
+    ('B5005', 2, 'Pärlsocker', 39.90);

@@ -1,0 +1,12 @@
+INSERT INTO Addresses(
+    AddressLine
+)
+VALUES(
+    'S:t Göransgatan 160A'
+),
+(
+    'Lagergatan 1'
+),
+(
+    'Skånegatan 2'
+);

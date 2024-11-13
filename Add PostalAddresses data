@@ -1,0 +1,16 @@
+INSERT INTO PostalAddresses(
+    PostalCode,
+    City
+)
+VALUES(
+    '104 25', 
+    'Stockholm'
+),
+(
+    '721 28',
+    'Västerås'
+),
+(
+    '200 42',
+    'Malmö'
+);

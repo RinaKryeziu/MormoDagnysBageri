@@ -1,0 +1,84 @@
+SELECT
+ Recipes.Id AS RecipeId,
+ Products.Name AS Product,
+ Ingredients.Name AS Ingredient,
+ Quantity AS kg
+FROM RecipeIngredients INNER JOIN Recipes
+ ON Recipes.Id = RecipeIngredients.RecipeId INNER JOIN Ingredients
+ ON Ingredients.Id = RecipeIngredients.IngredientId INNER JOIN Products
+ ON Products.Id = Recipes.ProductId
+WHERE Recipes.Id = 1; 
+
+
+SELECT
+ Recipes.Id AS RecipeId,
+ Products.Name AS Product,
+ Ingredients.Name AS Ingredient,
+ Quantity AS kg
+FROM RecipeIngredients INNER JOIN Recipes
+ ON Recipes.Id = RecipeIngredients.RecipeId INNER JOIN Ingredients
+ ON Ingredients.Id = RecipeIngredients.IngredientId INNER JOIN Products
+ ON Products.Id = Recipes.ProductId
+WHERE Recipes.Id = 2; 
+
+
+SELECT
+ Recipes.Id AS RecipeId,
+ Products.Name AS Product,
+ Ingredients.Name AS Ingredient,
+ Quantity AS kg
+FROM RecipeIngredients INNER JOIN Recipes
+ ON Recipes.Id = RecipeIngredients.RecipeId INNER JOIN Ingredients
+ ON Ingredients.Id = RecipeIngredients.IngredientId INNER JOIN Products
+ ON Products.Id = Recipes.ProductId
+WHERE Recipes.Id = 3;
+
+
+SELECT
+ Recipes.Id AS RecipeId,
+ Products.Name AS Product,
+ Ingredients.Name AS Ingredient,
+ Quantity AS kg
+FROM RecipeIngredients INNER JOIN Recipes
+ ON Recipes.Id = RecipeIngredients.RecipeId INNER JOIN Ingredients
+ ON Ingredients.Id = RecipeIngredients.IngredientId INNER JOIN Products
+ ON Products.Id = Recipes.ProductId
+WHERE Recipes.Id = 4;
+
+
+SELECT
+ Recipes.Id AS RecipeId,
+ Products.Name AS Product,
+ Ingredients.Name AS Ingredient,
+ Quantity AS kg
+FROM RecipeIngredients INNER JOIN Recipes
+ ON Recipes.Id = RecipeIngredients.RecipeId INNER JOIN Ingredients
+ ON Ingredients.Id = RecipeIngredients.IngredientId INNER JOIN Products
+ ON Products.Id = Recipes.ProductId
+WHERE Recipes.Id = 5;
+
+
+SELECT
+ Recipes.Id AS RecipeId,
+ Products.Name AS Product,
+ Ingredients.Name AS Ingredient,
+ Quantity AS kg
+FROM RecipeIngredients INNER JOIN Recipes
+ ON Recipes.Id = RecipeIngredients.RecipeId INNER JOIN Ingredients
+ ON Ingredients.Id = RecipeIngredients.IngredientId INNER JOIN Products
+ ON Products.Id = Recipes.ProductId
+WHERE Recipes.Id = 6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

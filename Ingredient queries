@@ -1,0 +1,16 @@
+SELECT 
+ Ingredients.Id AS IngredientId,
+ ItemNumber,
+ Ingredients.Name AS Ingredient,
+ Price, 
+ Suppliers.Name AS Supplier,
+ ContactPerson,
+ Email,
+ Phone
+FROM Ingredients INNER JOIN Suppliers
+ ON Suppliers.Id = Ingredients.SupplierId
+ ORDER BY Suppliers.Name;
+
+
+
+ 

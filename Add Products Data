@@ -1,0 +1,13 @@
+INSERT INTO Products(Name)
+VALUES
+    ('Chokladsnittar'),
+    ('Chokladboll'),
+    ('Franskbröd'),
+    ('Fralla'),
+    ('Kanelbulle'),
+    ('Kolasnittar');
+
+
+
+
+

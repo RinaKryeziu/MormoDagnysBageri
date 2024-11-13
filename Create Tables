@@ -1,0 +1,77 @@
+-- Create Tables 
+
+CREATE TABLE IF NOT EXISTS Addresses
+(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    AddressLine TEXT NOT NULL
+); 
+
+CREATE TABLE IF NOT EXISTS Ingredients
+(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ItemNumber TEXT NOT NULL UNIQUE,
+    SupplierId INTEGER NOT NULL,
+    Name TEXT NOT NUll,
+    Price FLOAT NOT NULL,
+    FOREIGN KEY (SupplierId) REFERENCES Suppliers (Id)
+); 
+
+CREATE TABLE IF NOT EXISTS Inventory
+(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IngredientId INTEGER NOT NULL,
+    QuantityInStock FLOAT NOT NULL,
+    ReStockLevel FLOAT NOT NULL,
+    LastOrderDate TEXT DEFAULT (datetime('now')) NOT NULL,
+    FOREIGN KEY (IngredientId) REFERENCES Ingredients(Id)
+); 
+
+CREATE TABLE IF NOT EXISTS PostalAddresses
+(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    PostalCode TEXT NOT NULL,
+    City TEXT NOT NULL
+); 
+
+CREATE TABLE IF NOT EXISTS Products
+(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NUll
+); 
+
+CREATE TABLE IF NOT EXISTS Recipes
+(
+    Id INTEGER PRIMARY KEY,
+    ProductId INTEGER NOT NULL,
+    FOREIGN KEY (ProductId) REFERENCES Products(Id)
+); 
+
+CREATE TABLE IF NOT EXISTS RecipeIngredients
+(
+    Id INTEGER PRIMARY KEY,
+    RecipeId INTEGER NOT NULL,
+    IngredientId INTEGER NOT NULL,
+    Quantity FLOAT NOT NULL,
+    FOREIGN KEY (RecipeId) REFERENCES Recipes(Id),
+    FOREIGN KEY (IngredientId) REFERENCES Ingredients(Id)
+); 
+
+CREATE TABLE IF NOT EXISTS Suppliers
+(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    AddressId INTEGER NOT NULL, 
+    PostalAddressId INTEGER NOT NULL, 
+    Name TEXT NOT NULL,
+    ContactPerson TEXT NOT NUll,
+    Email TEXT NOT NULL UNIQUE,
+    Phone TEXT NOT NULL,
+    FOREIGN KEY (AddressId) REFERENCES Addresses(Id),
+    FOREIGN KEY (PostalAddressId) REFERENCES PostalAddresses(Id)
+); 
+
+
+
+
+
+
+

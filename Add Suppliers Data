@@ -1,0 +1,25 @@
+INSERT INTO Suppliers(AddressId, PostalAddressId, Name, ContactPerson, Email, Phone)
+VALUES(
+    1,
+    1,
+    'Lantmännen', 
+    'Göran Svensson', 
+    'info@lantmannen.com',
+    '010-5560000'
+),
+(
+    2,
+    2,
+    'Menigo', 
+    'Eva Göransson',
+    'info@menigo.com',
+    '020-3355333'
+),
+(
+    3, 
+    3,
+    'Skånemejerier', 
+    'Lena Larsson',
+    'skane@skanemejerier.com',
+    '040-6192000'
+);

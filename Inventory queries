@@ -1,0 +1,30 @@
+
+
+Update Inventory
+SET LastOrderDate = (datetime ('now'))
+WHERE QuantityInStock <= ReStockLevel;
+
+SELECT
+ IngredientId,
+ Ingredients.Name AS Ingredient,
+ Suppliers.Name AS Supplier,
+ QuantityInStock,
+ ReStockLevel, 
+ LastOrderDate AS NewOrderDate
+FROM Inventory INNER JOIN Ingredients 
+ ON Ingredients.Id = Inventory.IngredientId INNER JOIN Suppliers
+ ON Suppliers.Id = Ingredients.SupplierId
+Where QuantityInStock <= ReStockLevel;
+
+
+SELECT
+ IngredientId,
+ Ingredients.Name AS Ingredient,
+ Suppliers.Name AS Supplier,
+ QuantityInStock,
+ ReStockLevel, 
+ LastOrderDate 
+FROM Inventory INNER JOIN Ingredients 
+ ON Ingredients.Id = Inventory.IngredientId INNER JOIN Suppliers
+ ON Suppliers.Id = Ingredients.SupplierId
+Where QuantityInStock > ReStockLevel;

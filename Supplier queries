@@ -1,0 +1,12 @@
+SELECT 
+ Suppliers.Id AS SupplierId,
+ Name,
+ AddressLine,
+ PostalCode,
+ City,
+ ContactPerson,
+ Email,
+ Phone
+FROM Suppliers INNER JOIN Addresses
+ ON Addresses.Id = Suppliers.AddressId INNER JOIN PostalAddresses
+ ON PostalAddresses.Id = Suppliers.PostalAddressId;

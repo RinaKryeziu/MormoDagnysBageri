@@ -1,0 +1,51 @@
+INSERT INTO RecipeIngredients(RecipeId, IngredientId, Quantity)
+VALUES
+-- Chokladsnittar
+    (1, 2, 0.75), -- Vetemjöl
+    (1, 4, 0.55), -- Strösocker
+    (1, 5, 0.5), -- Smör
+    (1, 6, 0.04), -- Vaniljsocker
+    (1, 8, 0.09), -- Kakao
+    (1, 11, 0.01), -- Bakpulver
+    (1, 14, 0.25), -- Pärlsocker
+
+-- Chokladbollar
+    (2, 4, 1.35), -- Strösocker
+    (2, 5, 1.5), -- Smör
+    (2, 6, 0.04), -- Vaniljsocker
+    (2, 7, 1.5), -- Havregryn
+    (2, 8, 0.25), -- Kakao
+    (2, 13, 0.5), -- Kokos
+
+-- Franskbröd
+    (3, 1, 0.5), -- Jäst
+    (3, 2, 8.0), -- Vetemjöl
+    (3, 5, 0.25), -- Smör
+    (3, 12, 0.09), -- Salt
+
+-- Fralla
+    (4, 1, 0.5), -- Jäst
+    (4, 2, 8.0), -- Vetemjöl
+    (4, 3, 6.18), -- Mjölk
+    (4, 5, 0.25), -- Smör
+    (4, 12, 0.12), -- Salt
+
+-- Kanelbullar
+    (5, 1, 0.2), -- Jäst
+    (5, 2, 6.4), -- Vetemjöl
+    (5, 3, 2.5), -- Mjölk
+    (5, 4, 0.4), -- Strösocker
+    (5, 5, 0.4), -- Smör
+    (5, 10, 0.12), -- Kanel
+    (5, 12, 0.08), -- Salt
+    (5, 14, 0.75), -- Pärlsocker
+
+-- Kolasnittare
+    (6, 2, 0.75), -- Vetemjöl
+    (6, 4, 0.55), -- Strösocker
+    (6, 5, 0.5), -- Smör
+    (6, 6, 0.04), -- Vaniljsocker
+    (6, 9, 0.2), -- Ljus sirap 
+    (6, 11, 0.01); -- Bakpulver
+
+
