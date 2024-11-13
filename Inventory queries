@@ -1,5 +1,4 @@
-
-
+PRAGMA foreign_key = 1;    
 Update Inventory
 SET LastOrderDate = (datetime ('now'))
 WHERE QuantityInStock <= ReStockLevel;

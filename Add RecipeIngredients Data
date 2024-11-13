@@ -1,3 +1,4 @@
+PRAGMA foreign_key=1;    
 INSERT INTO RecipeIngredients(RecipeId, IngredientId, Quantity)
 VALUES
 -- Chokladsnittar
